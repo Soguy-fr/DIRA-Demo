@@ -1,0 +1,59 @@
+Traceback (most recent call last):
+  File "<string>", line 13, in <module>
+    print(f'{no[:6]}|{ds}|D={d}|C={c}|{lab}')
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\guill\AppData\Local\Python\pythoncore-3.14-64\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u202f' in position 75: character maps to <undefined>
+604000|2025-01-19|D=1200|C=0|Facture Emily Wilson - Overtime december 24
+604000|2025-01-28|D=4800|C=0|Facture Emily Wilson - #2025-1
+604000|2025-02-28|D=4800|C=0|Facture Emily Wilson - #2025-2
+604000|2025-03-28|D=4800|C=0|Facture Emily Wilson - #2025-3
+604000|2025-04-28|D=4800|C=0|Facture Emily Wilson - #2025-4
+604000|2025-05-28|D=400|C=0|honoraires intervenantes
+604000|2025-06-13|D=2000|C=0|Facture Marion Cremona - 05/2025
+604000|2025-06-26|D=420|C=0|Facture Agence Wooli - F2025043
+604000|2025-06-28|D=3600|C=0|Facture Emily Wilson - #2025-6
+604000|2025-07-15|D=660|C=0|Facture Agence Wooli - F2025058
+604000|2025-07-21|D=500|C=0|Facture MARINE ORTUNO - DEV-25-07-02
+604000|2025-07-28|D=3000|C=0|Facture Emily Wilson - #2025-7
+604000|2025-08-28|D=3000|C=0|Facture Emily Wilson - #2025-8
+604000|2025-09-01|D=1800|C=0|VIREMENT EMIS 255241007500 - Config Moodle - Shauri
+604000|2025-09-08|D=600|C=0|Facture Shauri - FAC/2025/00002
+604000|2025-09-22|D=237|C=0|Facture Marion Cremona - 02/2025
+604000|2025-09-22|D=2000|C=0|Facture Marion Cremona - 06/2025
+604000|2025-09-24|D=3000|C=0|VIREMENT EMIS 255266003500 - Emily Wilson
+604000|2025-09-28|D=3000|C=0|Facture Emily Wilson - #2025-9
+604000|2025-10-07|D=213.16|C=0|Facture Emily Wilson - #2025-03
+604000|2025-10-08|D=1800|C=0|Facture Emily Wilson - #2025-10A
+604000|2025-10-15|D=1200|C=0|Facture Marion Cremona - 07/2025
+604000|2025-10-16|D=1690|C=0|Facture Fidèle Yobo - Facilitation retraite bien-être
+604000|2025-10-16|D=3600|C=0|Prestation Mai 25 - Emily Wilson - via Revolut
+604000|2025-10-24|D=1428|C=0|Facture ALINE ANDREE ESSONO - 01-001/AE
+604000|2025-10-28|D=3000|C=0|Facture Emily Wilson - #2025-10
+604000|2025-11-04|D=118.8|C=0|Facture Agence Wooli - F2025090
+604000|2025-12-03|D=612|C=0|Facture ALINE ANDREE ESSONO - 01-002/AE
+604000|2025-12-03|D=7320|C=0|Facture Emily Wilson - #2025-11
+604000|2025-12-19|D=3180|C=0|Facture Emily Wilson - #2025-12
+606300|2025-01-18|D=17.17|C=0|Facture LE FRESQUE - Boutique-012817
+606300|2025-09-18|D=39.48|C=0|Couverts et assiètes pour le bureau
+606400|2025-01-01|D=124|C=0|ASCOM heures compta 2024 + OD annuelles – Extourne
+606400|2025-01-01|D=0|C=15|ASCOM heures compta 2024 + OD annuelles – Extourne
+606400|2025-01-01|D=0|C=15|ASCOM heures compta 2024 + OD annuelles – Extourne
+606400|2025-01-01|D=0|C=30|ASCOM heures compta 2024 + OD annuelles – Extourne
+606400|2025-01-19|D=37.81|C=0|Papeterie retraite BE 2025 - Carrefour
+606400|2025-01-21|D=43.45|C=0|Papeterie pour la retraite BE 2025
+606400|2025-01-23|D=140.35|C=0|Facture Alpes Bureau - 260104945
+606400|2025-02-20|D=18.28|C=0|Facture Zoom - INV293829459 - 19,19 $US
+606400|2025-03-17|D=38.11|C=0|Chargeur et Systeme d'exploitation laptop bureau
+606400|2025-07-14|D=5.9|C=0|CB SOCAPDIS LECLER FACT 110725
+606400|2025-07-15|D=19.19|C=0|Facture Zoom - INV313616194
+606400|2025-07-16|D=83.97|C=0|Facture Amazon - DS-AEU-INV-FR-2025-120924282
+606400|2025-07-18|D=74.98|C=0|Facture DARTY GRAND OUEST - TICKET 592
+606400|2025-08-08|D=119.23|C=0|CB IBSO CALIPAGE FACT 060825
+606400|2025-10-10|D=159.2|C=0|Facture Divers fournisseurs - 003
+606400|2025-10-16|D=43.45|C=0|Achat papeterie - atelier retraite bien-être - Papeterie Fe TCHUENTE - 28'500 XAF
+606400|2025-11-09|D=94.8|C=0|Facture Pennylane - Pennylane-2025-11-580592
+613200|2025-01-01|D=952|C=0|ASCOM heures compta 2024 + OD annuelles – Extourne
+613200|2025-01-01|D=1500|C=0|ASCOM heures compta 2024 + OD annuelles – Extourne

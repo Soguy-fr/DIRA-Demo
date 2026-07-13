@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-brand-paper text-formula font-body;
+}
+
+h1, h2, h3 {
+  @apply font-heading;
+}
+
+/* Conventions de couleur métier (CONSTITUTION §4) */
+.cell-input { @apply text-input; }       /* saisie = bleu */
+.cell-formula { @apply text-formula; }   /* calcul = noir */
+.cell-alert { @apply text-alert; }       /* écart / dépassement = rouge */
+
+/* Saisie montant = frappe directe, pas d'incrémenteurs +1/−1 (UI-FLOWS §3) */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}

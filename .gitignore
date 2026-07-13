@@ -36,6 +36,10 @@ yarn-error.log*
 /supabase/.branches
 Export_pennylane/__pycache__/
 
+# xlsx : exclut tout sauf le fichier de démo fictif (les exports Pennylane = données réelles)
+*.xlsx
+!Sauve_un_arbre_Budget_GrandLivre.xlsx
+
 # lock ONLYOFFICE/LibreOffice
 .~lock.*#
 

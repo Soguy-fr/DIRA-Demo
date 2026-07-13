@@ -36,8 +36,7 @@ yarn-error.log*
 /supabase/.branches
 Export_pennylane/__pycache__/
 
-# données source (fichier de démo, hors repo)
-*.xlsx
+# lock ONLYOFFICE/LibreOffice
 .~lock.*#
 
 # claude local

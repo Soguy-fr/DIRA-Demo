@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -9,11 +9,22 @@
 }
 
 body {
-  @apply bg-brand-paper text-formula font-body;
+  @apply bg-brand-canvas text-formula font-body;
+  /* ss01 global (design.md) */
+  font-feature-settings: "ss01";
 }
 
+/* Titres display : Inter fin (300) + interlettrage négatif (signature éditoriale) */
 h1, h2, h3 {
   @apply font-heading;
+  letter-spacing: -0.02em;
+}
+
+/* Chiffres monétaires / numériques = figures tabulaires (signal financier DIRA) */
+.tnum,
+td,
+.font-mono {
+  font-feature-settings: "tnum";
 }
 
 /* Conventions de couleur métier (CONSTITUTION §4) */

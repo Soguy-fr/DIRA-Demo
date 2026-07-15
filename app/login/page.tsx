@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { createClient } from "@/lib/supabase/client";
+import { ShauriLogo } from "@/components/ShauriLogo";
 
 // Authentification mono-utilisateur (F10.1). Email + mot de passe Supabase.
 export default function LoginPage() {
@@ -36,14 +37,23 @@ export default function LoginPage() {
   }
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-brand-paper">
+    <div className="flex min-h-screen items-center justify-center bg-brand-canvas">
       <form
         onSubmit={onSubmit}
-        className="w-80 space-y-4 rounded-lg border border-slate-200 bg-white p-6 shadow-sm"
+        className="w-80 space-y-4 rounded-xl border border-slate-200 bg-white p-7 shadow-sm"
       >
-        <h1 className="font-heading text-xl font-bold text-brand-night">
-          Budget ONG
-        </h1>
+        <div className="flex flex-col items-center gap-3 text-center">
+          <ShauriLogo className="h-14 w-auto" />
+          <div>
+            <h1 className="text-2xl font-light tracking-tight text-brand-ink">
+              DIRA Budget
+            </h1>
+            <p className="text-xs font-medium text-brand-primary">by Shauri</p>
+          </div>
+          <p className="text-xs text-brand-muted">
+            Suivi budgétaire — Sauve un arbre
+          </p>
+        </div>
         <div>
           <label className="block text-sm text-slate-600">Email</label>
           <input
@@ -68,7 +78,7 @@ export default function LoginPage() {
         <button
           type="submit"
           disabled={loading}
-          className="w-full rounded bg-brand-emerald py-1.5 text-sm font-medium text-white disabled:opacity-50"
+          className="w-full rounded-md bg-brand-primary py-2 text-sm font-medium text-white transition-colors hover:bg-emerald-600 disabled:opacity-50"
         >
           {loading ? "Connexion…" : "Se connecter"}
         </button>

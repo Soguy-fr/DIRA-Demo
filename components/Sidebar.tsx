@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { ShauriLogo } from "@/components/ShauriLogo";
 
 const NAV = [
   { href: "/budgets", label: "Scénario" },
@@ -21,17 +22,23 @@ const NAV = [
 export function Sidebar() {
   const pathname = usePathname();
   return (
-    <nav className="w-48 shrink-0 border-r border-slate-200 bg-white p-3">
-      <div className="mb-4 flex flex-col items-start gap-2 px-2">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src="/logo.png"
-          alt="Terra Mucho"
-          className="h-16 w-auto"
-        />
-        <span className="font-heading text-sm font-bold leading-tight text-brand-terracotta">
-          Suivi financier Terra Mucho
+    <nav className="flex min-h-screen w-52 shrink-0 flex-col border-r border-slate-200 bg-white p-3">
+      <div className="mb-5 flex items-center gap-2.5 px-2">
+        <ShauriLogo className="h-10 w-auto" />
+        <div className="flex flex-col leading-tight">
+          <span className="text-base font-semibold tracking-tight text-brand-ink">
+            DIRA Budget
+          </span>
+          <span className="text-[11px] font-medium text-brand-primary">
+            by Shauri
+          </span>
+        </div>
+      </div>
+      <div className="mb-4 rounded-md bg-brand-primary/10 px-2.5 py-1.5">
+        <span className="text-[10px] font-semibold uppercase tracking-wide text-brand-muted">
+          Association
         </span>
+        <div className="text-sm font-medium text-brand-ink">Sauve un arbre</div>
       </div>
       <ul className="space-y-1">
         {NAV.map((item) => {
@@ -40,9 +47,9 @@ export function Sidebar() {
             <li key={item.href}>
               <Link
                 href={item.href}
-                className={`block rounded px-3 py-1.5 text-sm ${
+                className={`block rounded-md px-3 py-1.5 text-sm ${
                   active
-                    ? "bg-brand-night text-white"
+                    ? "bg-brand-ink text-white"
                     : "text-slate-700 hover:bg-slate-100"
                 }`}
               >
@@ -52,6 +59,9 @@ export function Sidebar() {
           );
         })}
       </ul>
+      <div className="mt-auto px-2 pt-4 text-[11px] text-brand-muted">
+        DIRA Budget, by Shauri
+      </div>
     </nav>
   );
 }

@@ -13,9 +13,9 @@ export default async function HomePage() {
   if (!isSupabaseConfigured()) {
     return (
       <div>
-        <h1 className="mb-2 text-2xl font-bold text-brand-night">Budget ONG</h1>
+        <h1 className="mb-2 text-3xl font-light tracking-tight text-brand-ink">DIRA Budget</h1>
         <p className="text-slate-600">
-          Prévisionnel et suivi budgétaire multi-bailleurs. Choisissez une section dans le menu.
+          Suivi budgétaire multi-bailleurs de l&apos;association Sauve un arbre. Choisissez une section dans le menu.
         </p>
       </div>
     );
@@ -63,9 +63,9 @@ export default async function HomePage() {
 
   return (
     <div className="max-w-3xl">
-      <h1 className="mb-1 text-2xl font-bold text-brand-night">Budget ONG</h1>
+      <h1 className="mb-1 text-3xl font-light tracking-tight text-brand-ink">DIRA Budget</h1>
       <p className="mb-5 text-sm text-slate-500">
-        Prévisionnel et suivi budgétaire multi-bailleurs{budgetRow ? ` — scénario actif : ${budgetRow.name}` : ""}.
+        Suivi budgétaire multi-bailleurs — Sauve un arbre{budgetRow ? ` · scénario actif : ${budgetRow.name}` : ""}.
       </p>
 
       <div className="grid gap-4 sm:grid-cols-2">

@@ -3,8 +3,8 @@ import "./globals.css";
 import { Providers } from "./providers";
 
 export const metadata: Metadata = {
-  title: "Budget ONG",
-  description: "Prévisionnel et suivi budgétaire multi-bailleurs",
+  title: "DIRA Budget, by Shauri",
+  description: "DIRA Budget — prévisionnel et suivi budgétaire multi-bailleurs, by Shauri",
 };
 
 export default function RootLayout({
